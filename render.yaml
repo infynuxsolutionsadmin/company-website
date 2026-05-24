@@ -1,7 +1,7 @@
 services:
   - type: web
     name: infynux
-    env: node
+    runtime: node
     buildCommand: bun install && bun run build
     startCommand: node start-server.js
     envVars:
