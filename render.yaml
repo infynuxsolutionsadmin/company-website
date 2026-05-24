@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: ruby-royals
+    name: infynux
     env: node
-    buildCommand: npm install && npm run build
-    startCommand: npm start
+    buildCommand: bun install && bun run build
+    startCommand: node start-server.js
     envVars:
       - key: NODE_VERSION
         value: 20
